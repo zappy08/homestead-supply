@@ -19,7 +19,8 @@ export const categories: { id: Category; name: string; description: string }[] =
   { id: 'outdoor', name: 'Outdoor & Garden', description: 'Everything for your outdoor space' },
 ];
 
-// Sample products - replace with your actual Seller Central export data
+// SAMPLE PRODUCTS - Replace with your actual Seller Central export data
+// Run: node scripts/import-products.js ~/Downloads/your-export.txt
 export const products: Product[] = [
   {
     id: '1',
@@ -27,9 +28,9 @@ export const products: Product[] = [
     title: 'Heavy-Duty Storage Bins (Set of 6)',
     description: 'Durable plastic storage containers perfect for organizing your garage, basement, or closet. Stackable design with secure lids.',
     price: '$34.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Storage+Bins',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Storage+Bins',
     category: 'home-goods',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE01',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
     featured: true,
   },
   {
@@ -38,9 +39,9 @@ export const products: Product[] = [
     title: 'Professional 18V Cordless Drill Kit',
     description: 'Powerful cordless drill with 2 batteries, charger, and carrying case. Perfect for DIY projects and home repairs.',
     price: '$89.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Cordless+Drill',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Cordless+Drill',
     category: 'tools',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE02',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
     featured: true,
   },
   {
@@ -49,9 +50,9 @@ export const products: Product[] = [
     title: 'Garden Tool Set (10-Piece)',
     description: 'Complete garden tool set including trowel, cultivator, weeder, and more. Ergonomic handles for comfortable use.',
     price: '$45.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Garden+Tools',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Garden+Tools',
     category: 'outdoor',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE03',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
     featured: true,
   },
   {
@@ -60,9 +61,9 @@ export const products: Product[] = [
     title: 'Stainless Steel Kitchen Organizer',
     description: 'Multi-tier kitchen organizer for countertops. Holds spices, utensils, and more. Rust-resistant stainless steel construction.',
     price: '$29.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Kitchen+Organizer',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Kitchen+Organizer',
     category: 'home-goods',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE04',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
   },
   {
     id: '5',
@@ -70,9 +71,9 @@ export const products: Product[] = [
     title: '150-Piece Mechanics Tool Set',
     description: 'Comprehensive tool set with sockets, wrenches, screwdrivers, and pliers. Chrome vanadium steel for durability.',
     price: '$149.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Tool+Set',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Tool+Set',
     category: 'tools',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE05',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
     featured: true,
   },
   {
@@ -81,9 +82,9 @@ export const products: Product[] = [
     title: 'Solar-Powered Garden Lights (8 Pack)',
     description: 'Weatherproof LED pathway lights. Auto on at dusk, off at dawn. Easy stake installation, no wiring needed.',
     price: '$39.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Garden+Lights',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Garden+Lights',
     category: 'outdoor',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE06',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
   },
   {
     id: '7',
@@ -91,9 +92,9 @@ export const products: Product[] = [
     title: 'Bamboo Drawer Organizers (Set of 5)',
     description: 'Expandable bamboo dividers for drawers. Eco-friendly and adjustable to fit any drawer size.',
     price: '$24.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Drawer+Organizers',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Drawer+Organizers',
     category: 'home-goods',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE07',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
   },
   {
     id: '8',
@@ -101,9 +102,9 @@ export const products: Product[] = [
     title: 'Digital Laser Level',
     description: 'Self-leveling laser with horizontal and vertical lines. Includes magnetic bracket and carrying pouch.',
     price: '$54.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Laser+Level',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Laser+Level',
     category: 'tools',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE08',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
   },
   {
     id: '9',
@@ -111,9 +112,9 @@ export const products: Product[] = [
     title: 'Expandable Garden Hose (100ft)',
     description: 'Lightweight, kink-free expandable hose. Includes 8-pattern spray nozzle. Contracts for easy storage.',
     price: '$49.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Garden+Hose',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Garden+Hose',
     category: 'outdoor',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE09',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
     featured: true,
   },
   {
@@ -122,9 +123,9 @@ export const products: Product[] = [
     title: 'Wall-Mounted Coat Rack',
     description: 'Modern entryway organizer with hooks and shelf. Easy installation, holds up to 50 lbs.',
     price: '$34.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Coat+Rack',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Coat+Rack',
     category: 'home-goods',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE10',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
   },
   {
     id: '11',
@@ -132,9 +133,9 @@ export const products: Product[] = [
     title: 'Rechargeable LED Work Light',
     description: '1000 lumens portable work light with magnetic base. 3 brightness levels, USB rechargeable.',
     price: '$29.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Work+Light',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Work+Light',
     category: 'tools',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE11',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
   },
   {
     id: '12',
@@ -142,9 +143,9 @@ export const products: Product[] = [
     title: 'Raised Garden Bed (4x4ft)',
     description: 'Cedar wood raised planter box. Pre-drilled for easy assembly. Perfect for vegetables and flowers.',
     price: '$79.99',
-    image: 'https://via.placeholder.com/400x400/1e3a5f/ffffff?text=Garden+Bed',
+    image: 'https://placehold.co/400x400/1e3a5f/ffffff?text=Garden+Bed',
     category: 'outdoor',
-    amazonUrl: 'https://www.amazon.com/dp/B0EXAMPLE12',
+    amazonUrl: 'https://www.amazon.com/s?me=AKDENCFW3A9SI',
     featured: true,
   },
 ];

@@ -12,14 +12,12 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="bg-white rounded px-2 py-1">
-              <img
-                src="/logo.png"
-                alt="Homestead Supply & More"
-                className="h-8 md:h-10 w-auto"
-              />
-            </div>
+          <Link href="/" className="flex items-center">
+            <img
+              src="/logo-white.svg"
+              alt="Homestead Supply & More"
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

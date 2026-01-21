@@ -11,9 +11,9 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <img
-                src="/logo-white.svg"
+                src="/logo.png"
                 alt="Homestead Supply & More"
-                className="h-12 w-auto"
+                className="h-14 w-auto rounded"
               />
             </div>
             <p className="text-gray-300 max-w-md">

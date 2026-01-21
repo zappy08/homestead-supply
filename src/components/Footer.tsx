@@ -9,12 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center mb-4">
-              <img
-                src="/logo.png"
-                alt="Homestead Supply & More"
-                className="h-14 w-auto rounded"
-              />
+            <div className="mb-4">
+              <h2 className="text-2xl font-bold text-white">Homestead Supply</h2>
+              <p className="text-gray-400 text-sm">&amp; More</p>
             </div>
             <p className="text-gray-300 max-w-md">
               Quality home goods, tools, and outdoor supplies for your homestead.

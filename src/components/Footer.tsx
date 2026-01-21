@@ -13,7 +13,7 @@ export default function Footer() {
               <img
                 src="/logo.svg"
                 alt="Homestead Supply & More"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
             </div>
             <p className="text-gray-300 max-w-md">

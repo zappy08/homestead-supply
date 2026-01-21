@@ -16,7 +16,7 @@ export default function Header() {
             <img
               src="/logo.svg"
               alt="Homestead Supply & More"
-              className="h-10 w-auto"
+              className="h-8 md:h-10 w-auto"
             />
           </Link>
 

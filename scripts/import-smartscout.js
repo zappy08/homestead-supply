@@ -2,25 +2,78 @@
 
 /**
  * Import Products from SmartScout CSV Export
+ * Filters for B2B/professional products only
  */
 
 const fs = require('fs');
 const path = require('path');
 
-// Category mapping based on Amazon categories
+// Categories to EXCLUDE (B2C/consumer products)
+const EXCLUDED_CATEGORIES = [
+  'beauty',
+  'personal care',
+  'fragrance',
+  'perfume',
+  'cologne',
+  'toys',
+  'games',
+  'teddy',
+  'stuffed',
+  'baby',
+  'jewelry',
+  'fashion',
+  'clothing',
+  'apparel',
+];
+
+// Categories to INCLUDE (B2B/professional products)
+const INCLUDED_CATEGORIES = [
+  'tools',
+  'home improvement',
+  'industrial',
+  'automotive',
+  'appliances',
+  'patio',
+  'lawn',
+  'garden',
+  'electronics',
+  'office',
+  'hardware',
+  'hvac',
+  'plumbing',
+  'electrical',
+];
+
+// Category mapping
 const CATEGORY_MAP = {
   'tools & home improvement': 'tools',
   'automotive': 'tools',
   'industrial & scientific': 'tools',
   'appliances': 'home-goods',
   'electronics': 'home-goods',
-  'home & kitchen': 'home-goods',
-  'beauty & personal care': 'home-goods',
-  'health & household': 'home-goods',
   'patio, lawn & garden': 'outdoor',
-  'toys & games': 'home-goods',
-  'camera & photo': 'home-goods',
+  'office products': 'home-goods',
 };
+
+function shouldIncludeProduct(category, subcategory, brand) {
+  const text = `${category} ${subcategory} ${brand}`.toLowerCase();
+
+  // Exclude beauty, toys, etc.
+  for (const excluded of EXCLUDED_CATEGORIES) {
+    if (text.includes(excluded)) {
+      return false;
+    }
+  }
+
+  // Must match at least one included category
+  for (const included of INCLUDED_CATEGORIES) {
+    if (text.includes(included)) {
+      return true;
+    }
+  }
+
+  return false;
+}
 
 function detectCategory(amazonCategory) {
   const cat = (amazonCategory || '').toLowerCase();
@@ -67,7 +120,9 @@ function parseCSV(content) {
     const subcategory = fields[8] || '';
     const price = parseFloat(fields[10]) || 0;
 
-    if (!asin || price <= 0 || price > 500) continue; // Skip invalid or very expensive items
+    // Skip invalid, very expensive, or non-B2B items
+    if (!asin || price <= 0 || price > 500) continue;
+    if (!shouldIncludeProduct(category, subcategory, brand)) continue;
 
     // Build Amazon image URL
     const imageUrl = imageFile
@@ -121,7 +176,7 @@ export const categories: { id: Category; name: string; description: string }[] =
   { id: 'outdoor', name: 'Outdoor & Garden', description: 'Everything for your outdoor space' },
 ];
 
-// Products imported from SmartScout export
+// Products imported from SmartScout - B2B/Professional products only
 export const products: Product[] = ${JSON.stringify(products, null, 2)};
 
 export function getProductsByCategory(category: Category): Product[] {
@@ -145,10 +200,10 @@ const csvPath = process.argv[2] || '/Users/igalrubinshtein/Desktop/SmartScout - 
 console.log(`Reading ${csvPath}...`);
 const content = fs.readFileSync(csvPath, 'utf-8');
 
-console.log('Parsing products...');
+console.log('Parsing products (B2B only, excluding beauty/toys)...');
 const products = parseCSV(content);
 
-console.log(`Found ${products.length} products`);
+console.log(`Found ${products.length} B2B products`);
 
 const outputPath = path.join(__dirname, '..', 'src', 'data', 'products.ts');
 fs.writeFileSync(outputPath, generateTypescript(products));
@@ -163,7 +218,7 @@ Object.entries(categoryCounts).forEach(([cat, count]) => {
   console.log(`  ${cat}: ${count} products`);
 });
 
-console.log('\nFirst 5 products:');
-products.slice(0, 5).forEach(p => {
+console.log('\nProducts:');
+products.forEach(p => {
   console.log(`  - ${p.title} (${p.asin}) - ${p.price}`);
 });

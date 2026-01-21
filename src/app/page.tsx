@@ -12,11 +12,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Quality Supplies for Your Home & Homestead
+              Professional Tools & Industrial Supplies
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-8">
-              Discover reliable home goods, tools, and outdoor products.
-              Shop with confidence on Amazon.
+              Quality equipment from trusted brands like Milwaukee, DEWALT, and Bosch.
+              Fast shipping through Amazon for your business needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/products" className="btn-secondary text-center">
@@ -103,7 +103,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#1e3a5f] text-center mb-12">
-            Why Shop With Us
+            Why Businesses Choose Us
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -112,8 +112,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1e3a5f] mb-2">Quality Products</h3>
-              <p className="text-gray-600">Carefully selected items that meet our high standards for durability and value.</p>
+              <h3 className="text-xl font-semibold text-[#1e3a5f] mb-2">Professional Grade</h3>
+              <p className="text-gray-600">Industrial-quality tools and equipment from brands professionals trust.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-[#ff9900] rounded-full flex items-center justify-center">
@@ -121,8 +121,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1e3a5f] mb-2">Fast Shipping</h3>
-              <p className="text-gray-600">All orders fulfilled by Amazon with Prime-eligible fast delivery options.</p>
+              <h3 className="text-xl font-semibold text-[#1e3a5f] mb-2">Fast Business Delivery</h3>
+              <p className="text-gray-600">Amazon fulfillment with Prime shipping to minimize downtime.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-[#ff9900] rounded-full flex items-center justify-center">
@@ -130,8 +130,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1e3a5f] mb-2">Easy Returns</h3>
-              <p className="text-gray-600">Shop worry-free with Amazon&apos;s hassle-free return policy.</p>
+              <h3 className="text-xl font-semibold text-[#1e3a5f] mb-2">Competitive Pricing</h3>
+              <p className="text-gray-600">Quality equipment at prices that work for your business budget.</p>
             </div>
           </div>
         </div>

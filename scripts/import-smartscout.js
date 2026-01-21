@@ -236,8 +236,24 @@ function parseCSV(content) {
       image: imageUrl,
       category: detectCategory(category),
       amazonUrl: `https://www.amazon.com/dp/${asin}`,
-      featured: products.length < 6,
+      featured: false, // Set below based on priority brands
     });
+  }
+
+  // Set featured products from priority brands
+  const featuredBrands = ['milwaukee', 'dewalt', 'bosch', 'irwin', 'american standard', 'grohe', 'schlage'];
+  let featuredCount = 0;
+
+  for (const product of products) {
+    if (featuredCount >= 8) break;
+    const titleLower = product.title.toLowerCase();
+    for (const brand of featuredBrands) {
+      if (titleLower.includes(brand) && !product.featured) {
+        product.featured = true;
+        featuredCount++;
+        break;
+      }
+    }
   }
 
   return products;

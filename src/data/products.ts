@@ -30,7 +30,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/41vCKjzLd4L.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B001E1PF18",
-    "featured": true
+    "featured": false
   },
   {
     "id": "2",
@@ -41,7 +41,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/41MjBhST5KL.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B004NHMOJ6",
-    "featured": true
+    "featured": false
   },
   {
     "id": "3",
@@ -52,7 +52,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/514y4LBHtlL.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B004NHMOHI",
-    "featured": true
+    "featured": false
   },
   {
     "id": "4",
@@ -85,7 +85,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/51leb6ksQaL.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B00PM8T4NY",
-    "featured": true
+    "featured": false
   },
   {
     "id": "7",
@@ -107,7 +107,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/41aVWtPItlL.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B07JNL7FN2",
-    "featured": false
+    "featured": true
   },
   {
     "id": "9",
@@ -140,7 +140,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/51it4XSZmIL.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B07QBKKWVB",
-    "featured": false
+    "featured": true
   },
   {
     "id": "12",
@@ -162,7 +162,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/31RPkq7V0-L.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B0CKKK3CK1",
-    "featured": false
+    "featured": true
   },
   {
     "id": "14",
@@ -173,7 +173,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/317WvD2uLCL.jpg",
     "category": "outdoor",
     "amazonUrl": "https://www.amazon.com/dp/B01BSURQXO",
-    "featured": false
+    "featured": true
   },
   {
     "id": "15",
@@ -195,7 +195,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/41ODgU71N0L.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B0CMBQ7WRG",
-    "featured": false
+    "featured": true
   },
   {
     "id": "17",
@@ -228,7 +228,7 @@ export const products: Product[] = [
     "image": "https://m.media-amazon.com/images/I/41tOGEOcZBL.jpg",
     "category": "tools",
     "amazonUrl": "https://www.amazon.com/dp/B00F5BEC8U",
-    "featured": false
+    "featured": true
   },
   {
     "id": "20",

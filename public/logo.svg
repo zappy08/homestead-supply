@@ -1,27 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 95">
   <!-- House Icon -->
-  <g fill="white">
+  <g fill="#1e3a5f" transform="translate(0, 10)">
+    <!-- Roof -->
+    <path d="M30 32 L30 5 L3 32 L57 32 Z"/>
+    <!-- Chimney -->
+    <rect x="42" y="10" width="9" height="15"/>
     <!-- House body -->
-    <path d="M5 30 L25 12 L45 30 L45 55 L5 55 Z"/>
-    <!-- Roof peak -->
-    <path d="M2 31 L25 10 L48 31 L44 31 L25 14 L6 31 Z"/>
-    <!-- Windows -->
-    <rect x="12" y="35" width="8" height="8" fill="#1e3a5f"/>
-    <rect x="30" y="35" width="8" height="8" fill="#1e3a5f"/>
-    <!-- Window crosses -->
-    <line x1="16" y1="35" x2="16" y2="43" stroke="white" stroke-width="1.5"/>
-    <line x1="12" y1="39" x2="20" y2="39" stroke="white" stroke-width="1.5"/>
-    <line x1="34" y1="35" x2="34" y2="43" stroke="white" stroke-width="1.5"/>
-    <line x1="30" y1="39" x2="38" y2="39" stroke="white" stroke-width="1.5"/>
+    <rect x="8" y="32" width="44" height="38"/>
+    <!-- Window frame (white) -->
+    <rect x="18" y="40" width="24" height="18" fill="white"/>
+    <!-- Window panes (navy cross) -->
+    <line x1="30" y1="40" x2="30" y2="58" stroke="#1e3a5f" stroke-width="3"/>
+    <line x1="18" y1="49" x2="42" y2="49" stroke="#1e3a5f" stroke-width="3"/>
   </g>
 
-  <!-- Decorative lines -->
-  <line x1="55" y1="18" x2="315" y2="18" stroke="white" stroke-width="2"/>
-  <line x1="55" y1="23" x2="315" y2="23" stroke="white" stroke-width="1.5"/>
-  <line x1="55" y1="48" x2="315" y2="48" stroke="white" stroke-width="2"/>
-  <line x1="55" y1="53" x2="315" y2="53" stroke="white" stroke-width="1.5"/>
+  <!-- Decorative lines - top -->
+  <line x1="68" y1="22" x2="275" y2="22" stroke="#1e3a5f" stroke-width="3.5"/>
+  <line x1="68" y1="29" x2="275" y2="29" stroke="#1e3a5f" stroke-width="2"/>
 
-  <!-- Text -->
-  <text x="58" y="42" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="white">HOMESTEAD SUPPLY</text>
-  <text x="245" y="42" font-family="Georgia, serif" font-size="12" fill="white">&amp; MORE</text>
+  <!-- HOMESTEAD text -->
+  <text x="171" y="50" font-family="'Trebuchet MS', 'Arial Black', sans-serif" font-size="24" font-weight="bold" fill="#1e3a5f" text-anchor="middle" letter-spacing="2">HOMESTEAD</text>
+
+  <!-- SUPPLY text -->
+  <text x="171" y="72" font-family="'Trebuchet MS', 'Arial Black', sans-serif" font-size="24" font-weight="bold" fill="#1e3a5f" text-anchor="middle" letter-spacing="2">SUPPLY</text>
+
+  <!-- Decorative lines - bottom -->
+  <line x1="68" y1="78" x2="275" y2="78" stroke="#1e3a5f" stroke-width="2"/>
+  <line x1="68" y1="85" x2="275" y2="85" stroke="#1e3a5f" stroke-width="3.5"/>
+
+  <!-- & MORE text -->
+  <text x="171" y="94" font-family="Georgia, serif" font-size="10" fill="#1e3a5f" text-anchor="middle" letter-spacing="1.5">&amp; MORE</text>
 </svg>

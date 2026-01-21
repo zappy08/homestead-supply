@@ -13,7 +13,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="/logo.png"
+              src="/logo.svg"
               alt="Homestead Supply & More"
               className="h-12 md:h-14 w-auto"
             />

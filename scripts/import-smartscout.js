@@ -54,6 +54,13 @@ const EXCLUDED_CATEGORIES = [
   'earmuff',
   'hunting',
   'shooting',
+  'knife',
+  'knives',
+  'tactical',
+  'folding knife',
+  'kayak',
+  'air mattress',
+  'camping',
 ];
 
 // Categories to INCLUDE (Tools, HVAC, Plumbing, Home Improvement)

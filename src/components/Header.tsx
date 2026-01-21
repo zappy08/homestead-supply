@@ -13,11 +13,13 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <img
-              src="/logo.png"
-              alt="Homestead Supply & More"
-              className="h-10 md:h-12 w-auto brightness-0 invert"
-            />
+            <div className="bg-white rounded px-2 py-1">
+              <img
+                src="/logo.png"
+                alt="Homestead Supply & More"
+                className="h-8 md:h-10 w-auto"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -7,13 +7,13 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <header className="bg-[#eef1f4] border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="Homestead Supply & More"
               className="h-12 md:h-14 w-auto"
             />

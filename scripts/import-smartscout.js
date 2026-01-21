@@ -89,7 +89,7 @@ function parseCSV(content) {
   const lines = content.split('\n');
   const products = [];
 
-  for (let i = 1; i < lines.length && products.length < 30; i++) {
+  for (let i = 1; i < lines.length && products.length < 100; i++) {
     const line = lines[i];
     if (!line.trim()) continue;
 
@@ -120,8 +120,8 @@ function parseCSV(content) {
     const subcategory = fields[8] || '';
     const price = parseFloat(fields[10]) || 0;
 
-    // Skip invalid, very expensive, or non-B2B items
-    if (!asin || price <= 0 || price > 500) continue;
+    // Skip invalid or non-B2B items (allow higher prices for B2B)
+    if (!asin || price <= 0 || price > 2000) continue;
     if (!shouldIncludeProduct(category, subcategory, brand)) continue;
 
     // Build Amazon image URL
